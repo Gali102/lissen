@@ -27,11 +27,16 @@
             <div class="container-fluid">
                 <!-- Small boxes (Stat box) -->
                 <div class="row">
-                    <div class="col-2">
-                        <a href="{{ route('category.create') }}" class="btn btn-block btn-primary">Добавить</a>
-                    </div>
                     <div class="col-12">
-                        Категории
+
+                        <h5>Добавить категорию</h5>
+
+                        <form action="" class="col-4">
+                            <div class="form-group">
+                                <input type="text" name="" placeholder="Добавить категорию">
+                            </div>
+                            <input type="submit" class="btn btn-primary">
+                        </form>
                     </div>
 
                 </div>
