@@ -22,9 +22,13 @@ Route::group(['namespace' => 'Admin' , 'prefix' => 'admin'], function () {
     Route::group(['namespace' => 'Category' , 'prefix' => 'categories'], function () {
         Route::get('/', 'IndexController')->name('category.index');
         Route::get('/create', 'CreateController')->name('category.create');
+        Route::get('/', 'StoreController')->name('category.store');
     });
 });
 
 
 Auth::routes();
 
+Route::group(['middleware' => ['role:admin']], function () {
+    //
+});
